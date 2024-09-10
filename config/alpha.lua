@@ -5,26 +5,28 @@ end
 
 local dashboard = require 'alpha.themes.dashboard'
 dashboard.section.header.val = {
-  '                                                                       ',
-  '                                                                       ',
-  '                                                                       ',
-  '                                                                       ',
-  '                                                                       ',
-  '                                                                       ',
-  '                                                                       ',
-  '      ██╗███████╗███████╗███████╗██╗   ██╗██╗   ██╗██╗███╗   ███╗      ',
-  '      ██║██╔════╝██╔════╝╚══███╔╝╚██╗ ██╔╝██║   ██║██║████╗ ████║      ',
-  '      ██║█████╗  █████╗    ███╔╝  ╚████╔╝ ██║   ██║██║██╔████╔██║      ',
-  ' ██   ██║██╔══╝  ██╔══╝   ███╔╝    ╚██╔╝  ╚██╗ ██╔╝██║██║╚██╔╝██║      ',
-  ' ╚█████╔╝███████╗███████╗███████╗   ██║    ╚████╔╝ ██║██║ ╚═╝ ██║      ',
-  '  ╚════╝ ╚══════╝╚══════╝╚══════╝   ╚═╝     ╚═══╝  ╚═╝╚═╝     ╚═╝      ',
-  '                                                                       ',
-  '                                                                       ',
-  '                                                                       ',
-  '                                                                       ',
-  '                                                                       ',
-  '                                                                       ',
+'          ▗▄▄▄       ▗▄▄▄▄    ▄▄▄▖           ',
+'          ▜███▙       ▜███▙  ▟███▛           ',
+'           ▜███▙       ▜███▙▟███▛            ',
+'            ▜███▙       ▜██████▛             ',
+'     ▟█████████████████▙ ▜████▛     ▟▙       ',
+'    ▟███████████████████▙ ▜███▙    ▟██▙      ',
+'           ▄▄▄▄▖           ▜███▙  ▟███▛      ',
+'          ▟███▛             ▜██▛ ▟███▛       ',
+'         ▟███▛               ▜▛ ▟███▛        ',
+'▟███████████▛                  ▟██████████▙  ',
+'▜██████████▛                  ▟███████████▛  ',
+'      ▟███▛ ▟▙               ▟███▛           ',
+'     ▟███▛ ▟██▙             ▟███▛            ',
+'    ▟███▛  ▜███▙           ▝▀▀▀▀             ',
+'    ▜██▛    ▜███▙ ▜██████████████████▛       ',
+'     ▜▛     ▟████▙ ▜████████████████▛        ',
+'           ▟██████▙       ▜███▙              ',
+'          ▟███▛▜███▙       ▜███▙             ',
+'         ▟███▛  ▜███▙       ▜███▙            ',
+'         ▝▀▀▀    ▀▀▀▀▘       ▀▀▀▘            ',
 }
+
 dashboard.section.buttons.val = {
   dashboard.button('e', '󱝩  Explorer', ':NvimTreeToggle<CR>'),
   dashboard.button(
@@ -38,10 +40,10 @@ dashboard.section.buttons.val = {
     '󱝩  Recently used files',
     ':Telescope oldfiles theme=dropdown<CR>'
   ),
-  dashboard.button('q', '  Quit JeezyVim', ':qa<CR>'),
+  dashboard.button('q', '  Exit', ':qa<CR>'),
 }
 
-dashboard.section.footer.val = 'Free Palestine'
+dashboard.section.footer.val = '❄️  just chill ❄️'
 
 dashboard.section.footer.opts.hl = 'Type'
 dashboard.section.header.opts.hl = 'Include'

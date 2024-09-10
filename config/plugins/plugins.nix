@@ -5,6 +5,7 @@
       settings.checkTs = pkgs.lib.mkDefault true;
     };
     crates-nvim.enable = pkgs.lib.mkDefault true;
+    rainbow-delimiters.enable = true;
     bacon.enable = pkgs.lib.mkDefault true;
     rust-tools.enable = pkgs.lib.mkDefault true;
     lastplace.enable = pkgs.lib.mkDefault true;
@@ -52,6 +53,12 @@
       enableSurround = pkgs.lib.mkDefault true;
       enableTransmute = pkgs.lib.mkDefault true;
       treesitterIntegration.enable = pkgs.lib.mkDefault true;
+    };
+    copilot-vim = {
+        enable = true;
+        settings.filetypes = {
+          "*" = true;
+      };
     };
   };
 }

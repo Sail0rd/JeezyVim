@@ -68,11 +68,11 @@
       };
     };
     keymaps = {
-      "<leader>f" = {
+      "<leader>ff" = {
         action = "git_files";
         options.desc = "Files";
       };
-      "<leader>s" = {
+      "<leader>fg" = {
         action = "live_grep";
         options.desc = "Search Text";
       };
