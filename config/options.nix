@@ -44,7 +44,7 @@
       };
       list = true;
       showbreak = "↪ ";
-      foldmethod = "expr";
+      foldmethod = "indent";
       foldnestmax = 20;
       foldminlines = 2;
       foldlevel = 99;
