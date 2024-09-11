@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  colorschemes.nord = {
+  colorschemes.vscode = {
     enable = pkgs.lib.mkDefault true;
   };
 }

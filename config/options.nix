@@ -25,7 +25,6 @@
       splitkeep = "cursor";
       swapfile = false;
       undofile = true;
-      updatetime = 300;
       writebackup = false;
       expandtab = true;
       shiftwidth = 4;

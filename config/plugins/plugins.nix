@@ -5,7 +5,8 @@
       settings.checkTs = pkgs.lib.mkDefault true;
     };
     crates-nvim.enable = pkgs.lib.mkDefault true;
-    rainbow-delimiters.enable = true;
+    rainbow-delimiters.enable = pkgs.lib.mkDefault true;
+    gitgutter.enable = pkgs.lib.mkDefault true;
     bacon.enable = pkgs.lib.mkDefault true;
     rust-tools.enable = pkgs.lib.mkDefault true;
     lastplace.enable = pkgs.lib.mkDefault true;
@@ -34,7 +35,6 @@
       settings = {
         direction = "float";
         floatOpts = {border = "single";};
-        terminalMappings = pkgs.lib.mkDefault true;
       };
     };
     illuminate = {
@@ -53,12 +53,6 @@
       enableSurround = pkgs.lib.mkDefault true;
       enableTransmute = pkgs.lib.mkDefault true;
       treesitterIntegration.enable = pkgs.lib.mkDefault true;
-    };
-    copilot-vim = {
-        enable = true;
-        settings.filetypes = {
-          "*" = true;
-      };
     };
   };
 }

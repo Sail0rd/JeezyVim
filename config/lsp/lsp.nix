@@ -8,6 +8,7 @@
       jsonls.enable = pkgs.lib.mkDefault true;
       marksman.enable = pkgs.lib.mkDefault true;
       nil-ls.enable = pkgs.lib.mkDefault true;
+      nixd.enable = pkgs.lib.mkDefault true;
       pyright.enable = pkgs.lib.mkDefault true;
       tsserver.enable = pkgs.lib.mkDefault true;
       lua-ls.enable = pkgs.lib.mkDefault true;
