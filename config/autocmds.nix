@@ -26,6 +26,14 @@
     {
       event = ["FileType"];
       pattern = [
+        "nix"
+      ];
+      command = "TSContextDisable";
+      desc = "Disable context for nix files as it's annoying";
+    }
+    {
+      event = ["FileType"];
+      pattern = [
         "netrw"
         "Jaq"
         "qf"
