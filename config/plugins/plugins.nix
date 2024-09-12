@@ -7,7 +7,6 @@
     crates-nvim.enable = pkgs.lib.mkDefault true;
     rainbow-delimiters.enable = pkgs.lib.mkDefault true;
     gitgutter.enable = pkgs.lib.mkDefault true;
-    bacon.enable = pkgs.lib.mkDefault true;
     rust-tools.enable = pkgs.lib.mkDefault true;
     lastplace.enable = pkgs.lib.mkDefault true;
     todo-comments = {
