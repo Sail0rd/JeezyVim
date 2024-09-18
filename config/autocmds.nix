@@ -11,6 +11,12 @@
       };
     }
     {
+      event = "FileType";
+      pattern = ["markdown"];
+      command = "setlocal conceallevel=2";
+      desc = "Conceal Syntax Attribute";
+    }
+    {
       event = ["FileType"];
       pattern = [
         "markdown"

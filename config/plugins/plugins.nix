@@ -5,7 +5,6 @@
       settings.checkTs = pkgs.lib.mkDefault true;
     };
     crates-nvim.enable = pkgs.lib.mkDefault true;
-    markdown-preview.enable = true;
     rainbow-delimiters.enable = pkgs.lib.mkDefault true;
     gitgutter.enable = pkgs.lib.mkDefault true;
     rust-tools.enable = pkgs.lib.mkDefault true;
