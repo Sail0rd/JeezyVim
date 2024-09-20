@@ -9,6 +9,7 @@
     gitgutter.enable = pkgs.lib.mkDefault true;
     rust-tools.enable = pkgs.lib.mkDefault true;
     lastplace.enable = pkgs.lib.mkDefault true;
+    friendly-snippets.enable = pkgs.lib.mkDefault true;
     todo-comments = {
       enable = pkgs.lib.mkDefault true;
       settings = {
