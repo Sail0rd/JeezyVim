@@ -19,6 +19,7 @@
       tailwindcss.enable = pkgs.lib.mkDefault true;
       # typst-lsp.enable = pkgs.lib.mkDefault true; # broken
       cssls.enable = pkgs.lib.mkDefault true;
+      helm-ls.enable = pkgs.lib.mkDefault true;
       html.enable = pkgs.lib.mkDefault true;
       htmx.enable = pkgs.lib.mkDefault true;
       solargraph.enable = pkgs.lib.mkDefault true;
