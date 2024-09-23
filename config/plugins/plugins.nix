@@ -30,6 +30,13 @@
       enable = pkgs.lib.mkDefault true;
       updateFocusedFile.enable = pkgs.lib.mkDefault true;
     };
+    undotree = {
+      enable = pkgs.lib.mkDefault true;
+      settings = {
+        focusOnToggle = pkgs.lib.mkDefault true;
+        highlightChangedText = pkgs.lib.mkDefault true;
+      };
+    };
     toggleterm = {
       enable = pkgs.lib.mkDefault true;
       settings = {
