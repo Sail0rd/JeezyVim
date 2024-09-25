@@ -10,6 +10,7 @@
       nixd.enable = pkgs.lib.mkDefault true;
       pyright.enable = pkgs.lib.mkDefault true;
       tsserver.enable = pkgs.lib.mkDefault true;
+      terraformls.enable = pkgs.lib.mkDefault true;
       lua-ls.enable = pkgs.lib.mkDefault true;
       rust-analyzer = {
         enable = pkgs.lib.mkDefault true;
@@ -22,7 +23,6 @@
       helm-ls.enable = pkgs.lib.mkDefault true;
       html.enable = pkgs.lib.mkDefault true;
       htmx.enable = pkgs.lib.mkDefault true;
-      solargraph.enable = pkgs.lib.mkDefault true;
       yamlls.enable = pkgs.lib.mkDefault true;
       taplo.enable = pkgs.lib.mkDefault true;
     };
