@@ -5,10 +5,10 @@
     lspkind-nvim
     zen-mode-nvim
     twilight-nvim
-    {
-      plugin = tint-nvim;
-      config = "lua require('tint').setup()";
-    }
+    # {
+    #   plugin = tint-nvim;
+    #   config = "lua require('tint').setup()";
+    # }
     {
       plugin = nvim-surround;
       config = "lua require('nvim-surround').setup({move_cursor=false})";
