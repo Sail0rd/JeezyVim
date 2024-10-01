@@ -23,7 +23,7 @@
 
       formatting = {
         stylua.enable = pkgs.lib.mkDefault true;
-        alejandra.enable = pkgs.lib.mkDefault true;
+        nixfmt.enable = pkgs.lib.mkDefault true;
         shfmt.enable = pkgs.lib.mkDefault true;
         gofmt.enable = pkgs.lib.mkDefault true;
         black.enable = pkgs.lib.mkDefault true;
