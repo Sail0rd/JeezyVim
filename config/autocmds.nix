@@ -1,7 +1,7 @@
 {
   autoCmd = [
     {
-      event = ["BufWinEnter"];
+      event = [ "BufWinEnter" ];
       callback = {
         __raw = ''
           function()
@@ -12,15 +12,13 @@
     }
     {
       event = "FileType";
-      pattern = ["markdown"];
+      pattern = [ "markdown" ];
       command = "setlocal conceallevel=2";
       desc = "Conceal Syntax Attribute";
     }
     {
-      event = ["FileType"];
-      pattern = [
-        "markdown"
-      ];
+      event = [ "FileType" ];
+      pattern = [ "markdown" ];
       callback = {
         __raw = ''
           function()
@@ -30,15 +28,13 @@
       };
     }
     {
-      event = ["FileType"];
-      pattern = [
-        "nix"
-      ];
+      event = [ "FileType" ];
+      pattern = [ "nix" ];
       command = "TSContextDisable";
       desc = "Disable context for nix files as it's annoying";
     }
     {
-      event = ["FileType"];
+      event = [ "FileType" ];
       pattern = [
         "netrw"
         "Jaq"
@@ -64,7 +60,7 @@
       };
     }
     {
-      event = ["CmdWinEnter"];
+      event = [ "CmdWinEnter" ];
       callback = {
         __raw = ''
           function()
@@ -74,7 +70,7 @@
       };
     }
     {
-      event = ["VimResized"];
+      event = [ "VimResized" ];
       callback = {
         __raw = ''
           function()

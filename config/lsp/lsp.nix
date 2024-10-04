@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   plugins.lsp = {
     enable = pkgs.lib.mkDefault true;
     servers = {

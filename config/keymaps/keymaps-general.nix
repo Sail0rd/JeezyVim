@@ -52,10 +52,10 @@
     }
 
     {
-        action =  "<ESC>";
-        mode = "i";
-        key =  "jj";
-        options.desc = "Escape remap";
+      action = "<ESC>";
+      mode = "i";
+      key = "jj";
+      options.desc = "Escape remap";
     }
 
     # Window navigation

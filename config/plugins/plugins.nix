@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   plugins = {
     nvim-autopairs = {
       enable = pkgs.lib.mkDefault true;
@@ -20,7 +21,9 @@
           keyword = "wide";
         };
         keywords = {
-          QUESTION = {icon = "";};
+          QUESTION = {
+            icon = "";
+          };
         };
       };
     };
@@ -41,7 +44,9 @@
       enable = pkgs.lib.mkDefault true;
       settings = {
         direction = "float";
-        floatOpts = {border = "single";};
+        floatOpts = {
+          border = "single";
+        };
       };
     };
     illuminate = {

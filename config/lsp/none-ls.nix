@@ -1,8 +1,11 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   plugins.none-ls = {
     enable = pkgs.lib.mkDefault true;
     sources = {
-      code_actions = { statix.enable = pkgs.lib.mkDefault true; };
+      code_actions = {
+        statix.enable = pkgs.lib.mkDefault true;
+      };
 
       diagnostics = {
         stylelint.enable = pkgs.lib.mkDefault true;
@@ -23,8 +26,7 @@
         stylua.enable = pkgs.lib.mkDefault true;
         nixfmt = {
           enable = pkgs.lib.mkDefault true;
-          package = pkgs.lib.mkDefault
-            pkgs.nixfmt-rfc-style; # to be consistent with nixpkgs
+          package = pkgs.lib.mkDefault pkgs.nixfmt-rfc-style; # to be consistent with nixpkgs
         };
         shfmt.enable = pkgs.lib.mkDefault true;
         gofmt.enable = pkgs.lib.mkDefault true;
