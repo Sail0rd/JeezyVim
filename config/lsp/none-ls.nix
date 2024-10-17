@@ -35,6 +35,7 @@
         prettier.enable = pkgs.lib.mkDefault true;
         prettier.disableTsServerFormatter = pkgs.lib.mkDefault true;
         typstfmt.enable = pkgs.lib.mkDefault true;
+        terraform_fmt.enable = pkgs.lib.mkDefault true;
       };
     };
   };
