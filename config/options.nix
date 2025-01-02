@@ -27,8 +27,8 @@
       undofile = true;
       writebackup = false;
       expandtab = true;
-      shiftwidth = 4;
-      tabstop = 4;
+      shiftwidth = 2;
+      tabstop = 2;
       cursorline = true;
       laststatus = 3;
       number = true;
