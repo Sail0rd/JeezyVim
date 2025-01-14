@@ -20,7 +20,6 @@
         dotenv_linter.enable = pkgs.lib.mkDefault true;
         deadnix.enable = pkgs.lib.mkDefault true;
         trail_space.enable = pkgs.lib.mkDefault true;
-        sqruff.enable = pkgs.lib.mkDefault true;
       };
 
       formatting = {
