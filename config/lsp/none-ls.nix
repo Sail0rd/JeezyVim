@@ -29,7 +29,6 @@
           enable = pkgs.lib.mkDefault true;
           package = pkgs.lib.mkDefault pkgs.nixfmt-rfc-style; # to be consistent with nixpkgs
         };
-        sqlfmt.enable = pkgs.lib.mkDefault true;
         shfmt.enable = pkgs.lib.mkDefault true;
         gofmt.enable = pkgs.lib.mkDefault true;
         black.enable = pkgs.lib.mkDefault true;

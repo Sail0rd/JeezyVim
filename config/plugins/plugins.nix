@@ -63,9 +63,11 @@
     marks.enable = pkgs.lib.mkDefault true;
     vim-matchup = {
       enable = pkgs.lib.mkDefault true;
-      surround_enabled = pkgs.lib.mkDefault true;
-      transmute_enabled = pkgs.lib.mkDefault true;
       treesitter.enable = pkgs.lib.mkDefault true;
+      settings = {
+        surround_enabled = pkgs.lib.mkDefault 1;
+        transmute_enabled = pkgs.lib.mkDefault 1;
+      };
     };
   };
 }
