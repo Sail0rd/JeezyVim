@@ -13,11 +13,6 @@
       tsserver.enable = pkgs.lib.mkDefault true;
       terraformls.enable = pkgs.lib.mkDefault true;
       lua-ls.enable = pkgs.lib.mkDefault true;
-      rust-analyzer = {
-        enable = pkgs.lib.mkDefault true;
-        installCargo = pkgs.lib.mkDefault false;
-        installRustc = pkgs.lib.mkDefault false;
-      };
       tailwindcss.enable = pkgs.lib.mkDefault true;
       # typst-lsp.enable = pkgs.lib.mkDefault true; # broken
       cssls.enable = pkgs.lib.mkDefault true;
