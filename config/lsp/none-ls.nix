@@ -20,6 +20,7 @@
         dotenv_linter.enable = pkgs.lib.mkDefault true;
         deadnix.enable = pkgs.lib.mkDefault true;
         trail_space.enable = pkgs.lib.mkDefault true;
+        sqruff.enable = pkgs.lib.mkDefault true;
       };
 
       formatting = {
@@ -28,6 +29,7 @@
           enable = pkgs.lib.mkDefault true;
           package = pkgs.lib.mkDefault pkgs.nixfmt-rfc-style; # to be consistent with nixpkgs
         };
+        sqlfmt.enable = pkgs.lib.mkDefault true;
         shfmt.enable = pkgs.lib.mkDefault true;
         gofmt.enable = pkgs.lib.mkDefault true;
         black.enable = pkgs.lib.mkDefault true;

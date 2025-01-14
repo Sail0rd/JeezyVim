@@ -24,7 +24,6 @@
       helm-ls.enable = pkgs.lib.mkDefault true;
       html.enable = pkgs.lib.mkDefault true;
       htmx.enable = pkgs.lib.mkDefault true;
-      sqls.enable = pkgs.lib.mkDefault true;
       yamlls.enable = pkgs.lib.mkDefault true;
       taplo.enable = pkgs.lib.mkDefault true;
     };
