@@ -69,5 +69,6 @@
         transmute_enabled = pkgs.lib.mkDefault 1;
       };
     };
+    web-devicons.enable = pkgs.lib.mkDefault true;
   };
 }

@@ -5,6 +5,7 @@
     vim-repeat
     lspkind-nvim
     zen-mode-nvim
+    vim-easymotion
     twilight-nvim
     # {
     #   plugin = tint-nvim;
