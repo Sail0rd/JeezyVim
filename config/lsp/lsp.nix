@@ -11,6 +11,7 @@
       nixd.enable = pkgs.lib.mkDefault true;
       pyright.enable = pkgs.lib.mkDefault true;
       tsserver.enable = pkgs.lib.mkDefault true;
+      ts_ls.enable = pkgs.lib.mkDefault true;
       terraformls.enable = pkgs.lib.mkDefault true;
       lua-ls.enable = pkgs.lib.mkDefault true;
       tailwindcss.enable = pkgs.lib.mkDefault true;
