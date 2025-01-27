@@ -39,6 +39,7 @@
         highlightChangedText = pkgs.lib.mkDefault true;
       };
     };
+    typst-vim.enable = pkgs.lib.mkDefault true;
     toggleterm = {
       enable = pkgs.lib.mkDefault true;
       settings = {

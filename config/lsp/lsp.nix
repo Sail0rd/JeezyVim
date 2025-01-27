@@ -14,7 +14,7 @@
       terraformls.enable = pkgs.lib.mkDefault true;
       lua_ls.enable = pkgs.lib.mkDefault true;
       tailwindcss.enable = pkgs.lib.mkDefault true;
-      # typst-lsp.enable = pkgs.lib.mkDefault true; # broken
+      typst-lsp.enable = pkgs.lib.mkDefault true; # broken
       cssls.enable = pkgs.lib.mkDefault true;
       helm_ls.enable = pkgs.lib.mkDefault true;
       html.enable = pkgs.lib.mkDefault true;
