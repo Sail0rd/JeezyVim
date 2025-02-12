@@ -11,10 +11,28 @@
             prompt_position = "top";
           };
         };
+        vimgrep_arguments = [
+          "rg"
+          "--hidden"
+          "--with-filename"
+          "--line-number"
+          "--column"
+          "--smart-case"
+          "--glob"
+          "!{**/.git/*,**/node_modules/*,**/package-lock.json,**/yarn.lock}"
+        ];
       };
       pickers = {
         find_files = {
           theme = "dropdown";
+          find_command = [
+            "rg"
+            "--files"
+            "--hidden"
+            "--smart-case"
+            "--glob"
+            "!{**/.git/*,**/node_modules/*}"
+          ];
         };
         git_files = {
           theme = "dropdown";
