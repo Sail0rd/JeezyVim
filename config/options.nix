@@ -4,6 +4,7 @@
       register = "unnamedplus";
     };
     editorconfig.enable = true;
+    vimAlias = true;
     opts = {
       termguicolors = true;
       showmode = false;
