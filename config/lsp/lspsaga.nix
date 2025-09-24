@@ -18,7 +18,7 @@
       };
       ui.border = "rounded";
       ui.codeAction = "";
+      beacon.enable = pkgs.lib.mkDefault true;
     };
-    beacon.enable = pkgs.lib.mkDefault true;
   };
 }
