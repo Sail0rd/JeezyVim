@@ -43,7 +43,7 @@ dashboard.section.buttons.val = {
   dashboard.button('q', '  Exit', ':qa<CR>'),
 }
 
-dashboard.section.footer.val = '❄️  just chill ❄️'
+dashboard.section.footer.val = '❄️ just chill ❄️'
 
 dashboard.section.footer.opts.hl = 'Type'
 dashboard.section.header.opts.hl = 'Include'
