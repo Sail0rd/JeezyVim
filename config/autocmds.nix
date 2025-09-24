@@ -11,14 +11,10 @@
       };
     }
     {
-      event = "FileType";
-      pattern = [ "markdown" ];
-      command = "setlocal conceallevel=2";
-      desc = "Conceal Syntax Attribute";
-    }
-    {
       event = [ "FileType" ];
-      pattern = [ "markdown" ];
+      pattern = [
+        "markdown"
+      ];
       callback = {
         __raw = ''
           function()
@@ -26,12 +22,6 @@
           end
         '';
       };
-    }
-    {
-      event = [ "FileType" ];
-      pattern = [ "nix" ];
-      command = "TSContextDisable";
-      desc = "Disable context for nix files as it's annoying";
     }
     {
       event = [ "FileType" ];
