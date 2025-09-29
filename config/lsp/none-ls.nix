@@ -2,6 +2,7 @@
 {
   plugins.none-ls = {
     enable = pkgs.lib.mkDefault true;
+    enableLspFormat = pkgs.lib.mkDefault false; # disable auto formatting on save;
     sources = {
       code_actions = {
         statix.enable = pkgs.lib.mkDefault true;
@@ -19,6 +20,7 @@
         fish.enable = pkgs.lib.mkDefault true;
         dotenv_linter.enable = pkgs.lib.mkDefault true;
         deadnix.enable = pkgs.lib.mkDefault true;
+        kube_linter.enable = pkgs.lib.mkDefault true;
         trail_space.enable = pkgs.lib.mkDefault true;
       };
 
