@@ -24,13 +24,6 @@
       };
     }
 
-    # UndoTree
-    {
-      key = "<leader>u";
-      action = "<CMD>UndotreeToggle<CR>";
-      options.desc = "Toggle Undotree";
-    }
-
     # LSP
     {
       # Custom fn from extra_lua.nix which works like IntelliJ

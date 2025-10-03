@@ -4,7 +4,6 @@
       register = "unnamedplus";
     };
     editorconfig.enable = true;
-    vimAlias = true;
     opts = {
       termguicolors = true;
       showmode = false;
@@ -26,14 +25,15 @@
       splitkeep = "cursor";
       swapfile = false;
       undofile = true;
+      updatetime = 300;
       writebackup = false;
       expandtab = true;
-      shiftwidth = 2;
-      tabstop = 2;
+      shiftwidth = 4;
+      tabstop = 4;
       cursorline = true;
       laststatus = 3;
       number = true;
-      relativenumber = false;
+      relativenumber = true;
       signcolumn = "yes";
       wrap = true;
       scrolloff = 8;
@@ -44,7 +44,7 @@
       };
       list = true;
       showbreak = "↪ ";
-      foldmethod = "indent";
+      foldmethod = "expr";
       foldnestmax = 20;
       foldminlines = 2;
       foldlevel = 99;

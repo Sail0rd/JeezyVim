@@ -44,18 +44,11 @@
       mode = "n";
     }
 
+    # Terminal escape back to nvim
     {
       action = "<C-\\><C-n>";
       key = "<Esc>";
       mode = "t";
-      options.desc = "Terminal escape back to nvim";
-    }
-
-    {
-      action = "<ESC>";
-      mode = "i";
-      key = "jj";
-      options.desc = "Escape remap";
     }
 
     # Window navigation
