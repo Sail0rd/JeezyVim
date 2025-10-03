@@ -1,5 +1,6 @@
-{pkgs, ...}: {
-  colorschemes.kanagawa = {
+{ pkgs, ... }:
+{
+  colorschemes.vscode = {
     enable = pkgs.lib.mkDefault true;
   };
 }
