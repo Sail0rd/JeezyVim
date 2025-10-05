@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
   plugins.treesitter-context = {
-    enable = pkgs.lib.mkDefault true;
+    enable = pkgs.lib.mkDefault false;
   };
 }
