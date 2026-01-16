@@ -25,17 +25,27 @@
       };
 
       formatting = {
-        stylua.enable = pkgs.lib.mkDefault true;
         nixfmt = {
           enable = pkgs.lib.mkDefault true;
           package = pkgs.lib.mkDefault pkgs.nixfmt-rfc-style; # to be consistent with nixpkgs
         };
         shfmt.enable = pkgs.lib.mkDefault true;
         gofmt.enable = pkgs.lib.mkDefault true;
+        goimports.enable = pkgs.lib.mkDefault true;
         black.enable = pkgs.lib.mkDefault true;
         isort.enable = pkgs.lib.mkDefault true;
-        prettier.enable = pkgs.lib.mkDefault true;
-        prettier.disableTsServerFormatter = pkgs.lib.mkDefault true;
+        yamlfmt.enable = pkgs.lib.mkDefault true;
+        biome.enable = pkgs.lib.mkDefault true;
+        # prettier = {
+        #   enable = pkgs.lib.mkDefault true;
+        #   disableTsServerFormatter = pkgs.lib.mkDefault true;
+        #   settings = {
+        #     disabled_filetypes = [
+        #       "yaml"
+        #       "json"
+        #     ];
+        #   };
+        # };
         typstfmt.enable = pkgs.lib.mkDefault true;
         terraform_fmt.enable = pkgs.lib.mkDefault true;
       };
