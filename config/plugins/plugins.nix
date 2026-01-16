@@ -51,7 +51,7 @@
     };
     illuminate = {
       enable = pkgs.lib.mkDefault true;
-      underCursor = pkgs.lib.mkDefault true;
+      settings.underCursor = pkgs.lib.mkDefault true;
     };
     navic = {
       enable = pkgs.lib.mkDefault true;

@@ -27,7 +27,8 @@
       formatting = {
         nixfmt = {
           enable = pkgs.lib.mkDefault true;
-          package = pkgs.lib.mkDefault pkgs.nixfmt-rfc-style; # to be consistent with nixpkgs
+          package = pkgs.lib.mkDefault pkgs.nixfmt;
+          # package = pkgs.lib.mkDefault pkgs.nixfmt-rfc-style; # to be consistent with nixpkgs
         };
         shfmt.enable = pkgs.lib.mkDefault true;
         gofmt.enable = pkgs.lib.mkDefault true;
@@ -46,7 +47,6 @@
         #     ];
         #   };
         # };
-        typstfmt.enable = pkgs.lib.mkDefault true;
         terraform_fmt.enable = pkgs.lib.mkDefault true;
       };
     };
