@@ -4,12 +4,11 @@
     nvim-autopairs = {
       enable = pkgs.lib.mkDefault true;
       settings.checkTs = pkgs.lib.mkDefault true;
-    };
-    crates.enable = pkgs.lib.mkDefault true;
-    rainbow-delimiters.enable = pkgs.lib.mkDefault true;
-    gitgutter.enable = pkgs.lib.mkDefault true;
-    lastplace.enable = pkgs.lib.mkDefault true;
-    friendly-snippets.enable = pkgs.lib.mkDefault true;
+    }; # Auto Pair brackets, quotes, etc.
+    rainbow-delimiters.enable = pkgs.lib.mkDefault true; # Syntax highlighting for delimiters
+    gitgutter.enable = pkgs.lib.mkDefault true; # Git diff in the gutter
+    lastplace.enable = pkgs.lib.mkDefault true; # Remember last cursor position
+    friendly-snippets.enable = pkgs.lib.mkDefault true; # Snippets
     todo-comments = {
       enable = pkgs.lib.mkDefault true;
       settings = {
@@ -25,21 +24,20 @@
           };
         };
       };
-    };
-    comment.enable = pkgs.lib.mkDefault true;
-    sleuth.enable = pkgs.lib.mkDefault true;
+    }; # highlight todo comments
+    comment.enable = pkgs.lib.mkDefault true; # Commenting
+    sleuth.enable = pkgs.lib.mkDefault true; # Indentation according to filetype
     nvim-tree = {
       enable = pkgs.lib.mkDefault true;
       settings.update_focused_file.enable = pkgs.lib.mkDefault true;
-    };
+    }; # File explorer
     undotree = {
       enable = pkgs.lib.mkDefault true;
       settings = {
         focusOnToggle = pkgs.lib.mkDefault true;
         highlightChangedText = pkgs.lib.mkDefault true;
       };
-    };
-    typst-vim.enable = pkgs.lib.mkDefault true;
+    }; # Tree for undo history
     toggleterm = {
       enable = pkgs.lib.mkDefault true;
       settings = {
@@ -48,20 +46,21 @@
           border = "single";
         };
       };
-    };
+    }; # Terminal
     illuminate = {
       enable = pkgs.lib.mkDefault true;
       settings.underCursor = pkgs.lib.mkDefault true;
-    };
+    }; # Highlight word under cursor
+    origami.enable = pkgs.lib.mkDefault true; # folding
     navic = {
       enable = pkgs.lib.mkDefault true;
       settings = {
         highlight = pkgs.lib.mkDefault true;
         lsp.autoAttach = pkgs.lib.mkDefault true;
       };
-    };
-    colorizer.enable = pkgs.lib.mkDefault true;
-    marks.enable = pkgs.lib.mkDefault true;
+    }; # LSP context
+    colorizer.enable = pkgs.lib.mkDefault true; # Color highlighter
+    marks.enable = pkgs.lib.mkDefault true; # Marks
     vim-matchup = {
       enable = pkgs.lib.mkDefault true;
       treesitter.enable = pkgs.lib.mkDefault true;
@@ -69,7 +68,7 @@
         surround_enabled = pkgs.lib.mkDefault 1;
         transmute_enabled = pkgs.lib.mkDefault 1;
       };
-    };
-    web-devicons.enable = pkgs.lib.mkDefault true;
+    }; # Highlight matching brackets
+    web-devicons.enable = pkgs.lib.mkDefault true; # File icons
   };
 }

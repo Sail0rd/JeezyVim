@@ -53,10 +53,9 @@
         desc = "Definition";
       };
     }
-    # Alt+Enter for code actions like IntelliJ
     {
       action = "<cmd>Lspsaga code_action<cr>";
-      key = "<M-CR>";
+      key = "<leader>a";
       mode = "n";
       options = {
         noremap = true;
@@ -146,29 +145,6 @@
         desc = "ToggleTerm";
       };
     }
-
-    # Folding
-    {
-      action = "<cmd>lua require('ufo').openAllFolds()<CR>";
-      key = "zR";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Open All Folds";
-      };
-    }
-    {
-      action = "<cmd>lua require('ufo').closeAllFolds()<CR>";
-      key = "zM";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "Close All Folds";
-      };
-    }
-
     # Zen mode and twilight
     {
       action = "<cmd>ZenMode<CR>";

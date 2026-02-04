@@ -2,7 +2,7 @@
 {
   plugins.none-ls = {
     enable = pkgs.lib.mkDefault true;
-    enableLspFormat = pkgs.lib.mkDefault false; # disable auto formatting on save;
+    enableLspFormat = pkgs.lib.mkDefault true;
     sources = {
       code_actions = {
         statix.enable = pkgs.lib.mkDefault true;
@@ -18,10 +18,10 @@
         markdownlint.enable = pkgs.lib.mkDefault true;
         hadolint.enable = pkgs.lib.mkDefault true;
         fish.enable = pkgs.lib.mkDefault true;
-        dotenv_linter.enable = pkgs.lib.mkDefault true;
         deadnix.enable = pkgs.lib.mkDefault true;
         kube_linter.enable = pkgs.lib.mkDefault true;
         trail_space.enable = pkgs.lib.mkDefault true;
+        yamllint.enable = pkgs.lib.mkDefault true;
       };
 
       formatting = {
@@ -31,7 +31,6 @@
           # package = pkgs.lib.mkDefault pkgs.nixfmt-rfc-style; # to be consistent with nixpkgs
         };
         shfmt.enable = pkgs.lib.mkDefault true;
-        gofmt.enable = pkgs.lib.mkDefault true;
         goimports.enable = pkgs.lib.mkDefault true;
         black.enable = pkgs.lib.mkDefault true;
         isort.enable = pkgs.lib.mkDefault true;
