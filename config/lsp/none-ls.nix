@@ -11,7 +11,13 @@
       diagnostics = {
         stylelint.enable = pkgs.lib.mkDefault true;
         statix.enable = pkgs.lib.mkDefault true;
-        sqlfluff.enable = pkgs.lib.mkDefault true;
+        sqruff = {
+          enable = pkgs.lib.mkDefault true;
+          settings.extra_args = pkgs.lib.mkDefault [
+            "--dialect"
+            "postgres"
+          ];
+        };
         rubocop.enable = pkgs.lib.mkDefault true;
         pylint.enable = pkgs.lib.mkDefault true;
         mypy.enable = pkgs.lib.mkDefault true;
@@ -25,6 +31,13 @@
       };
 
       formatting = {
+        sqruff = {
+          enable = pkgs.lib.mkDefault true;
+          settings.extra_args = pkgs.lib.mkDefault [
+            "--dialect"
+            "postgres"
+          ];
+        };
         nixfmt = {
           enable = pkgs.lib.mkDefault true;
           package = pkgs.lib.mkDefault pkgs.nixfmt;
