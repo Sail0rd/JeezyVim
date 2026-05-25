@@ -178,5 +178,17 @@
         desc = "Toggle treeSJ";
       };
     }
+
+    # LazyGit
+    {
+      action = "<cmd>LazyGit<CR>";
+      key = "<leader>lg";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "LazyGit";
+      };
+    }
   ];
 }

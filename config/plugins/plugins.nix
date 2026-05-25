@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   plugins = {
+    lazygit.enable = pkgs.lib.mkDefault true; # Git integration
     nvim-autopairs = {
       enable = pkgs.lib.mkDefault true;
       settings.checkTs = pkgs.lib.mkDefault true;
